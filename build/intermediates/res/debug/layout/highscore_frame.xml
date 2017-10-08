@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF8F7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="#0099CC"
+            android:shadowColor="#000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="@string/back_button"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/list"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/back_buttonH" />
+
+        <TextView
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:text="Deine Punkte:     "
+            android:id="@+id/textView24"
+            android:gravity="right"
+            android:layout_gravity="center|right"
+            android:layout_weight="1.29" />
+
+        <TextView
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/yourPoints"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout><!-- From: file:/home/max/Studium/SS15/HCI/Team/WOLO_App/MI-Team2-Project/res/layout/highscore_frame.xml -->

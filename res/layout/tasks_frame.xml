@@ -1,0 +1,419 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#DFF8F7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DFF8F7">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="left">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="#0099CC"
+                            android:shadowColor="#000000"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="1"
+                            android:text="  Meine Tasks  "
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignRight="@+id/list"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:id="@+id/mt_button" />
+
+                        <Space
+                            android:layout_width="100dp"
+                            android:layout_height="fill_parent" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="#0099CC"
+                            android:shadowColor="#000000"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="1"
+                            android:text="  Task erstellen  "
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignRight="@+id/list"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:id="@+id/create_button" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="25px" />
+
+
+            </TableRow>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="25px" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="132dp"
+                        android:layout_height="wrap_content"
+                        android:text="Art"
+                        android:id="@+id/textView11"
+                        android:layout_column="0"
+                        android:layout_weight="0.06"
+                        android:gravity="center_horizontal|left" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kategorie"
+                        android:id="@+id/textView12"
+                        android:layout_column="0"
+                        android:layout_weight="0.22" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <RadioGroup
+                        android:layout_width="139dp"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="sinnvoll"
+                            android:id="@+id/suchErnst"
+                            android:layout_column="0"
+                            android:checked="true" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="lustig"
+                            android:id="@+id/suchFun"
+                            android:layout_column="1" />
+
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:layout_width="106dp"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="drinnen"
+                            android:id="@+id/suchIndoorButton"
+                            android:layout_column="1"
+                            android:checked="true" />
+
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="draußen"
+                            android:id="@+id/suchOutdoorButton"
+                            android:layout_column="0" />
+                    </RadioGroup>
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:text="Stunden"
+                        android:id="@+id/textView26"
+                        android:gravity="center_horizontal|left" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Minuten"
+                        android:id="@+id/textView27"
+                        android:gravity="center_horizontal|right" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal">
+
+                    <NumberPicker
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/stdPick"
+                        android:layout_column="1" />
+
+                    <NumberPicker
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/minPick"
+                        android:layout_column="1" />
+
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.06"
+                    android:background="#0099CC"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="@string/search_task_button"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/search_button"
+                    android:layout_gravity="bottom"
+                    android:layout_column="0" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"></TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"></TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="50px" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"></TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"></TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"></TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"></TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"></TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"></TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"></TableRow>
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"></TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"></TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"></TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"></TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"></TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            </TableRow>
+
+        </TableLayout>
+
+    </GridLayout>
+</ScrollView>

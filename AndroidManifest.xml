@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="at.ac.univie.gruppe1.team2"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <!-- Erleubater Internetzugriff zur Kursabfrage -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/main_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterFrame"
+            android:label="@string/register_frame_name"></activity>
+        <activity
+            android:name=".MainFrame"
+            android:label="@string/main_frame_name"></activity>
+        <activity
+            android:name=".HomeFrame"
+            android:label="@string/home_frame_name"></activity>
+        <activity
+            android:name=".TasksFrame"
+            android:label="@string/tasks_frame_name"></activity>
+        <activity
+            android:name=".ProfilFrame"
+            android:label="@string/settings_frame_name"></activity>
+        <activity
+            android:name=".LogoutFrame"
+            android:label="@string/logout_frame_name"></activity>
+        <activity
+            android:name=".ListFrame"
+            android:label="@string/list_frame_name"></activity>
+        <activity
+            android:name=".HighscoreFrame"
+            android:label="@string/highscore_frame_name"></activity>
+        <activity
+            android:name=".ChosenTasksFrame"
+            android:label="@string/chosentasks_frame_name"></activity>
+        <activity
+            android:name=".CreateTaskFrame"
+            android:label="@string/chosentasks_frame_name"></activity>
+        <activity
+
+            android:name=".RunningTaskFrame"
+            android:label="@string/chosentasks_frame_name"></activity>
+
+        <!-- <service
+             android:name=".RunningTaskFrame"
+             android:label="@string/chosentasks_frame_name">
+             >
+         </service>-->
+
+         <activity
+             android:name=".FinishTaskFrame"
+             android:label="@string/chosentasks_frame_name"></activity>
+         <activity
+             android:name=".DoneTasksFrame"
+             android:label="@string/chosentasks_frame_name"></activity>
+         <activity
+             android:name=".UploadPicFrame"
+             android:label="@string/upload_pic_frame_name"></activity>
+         <activity
+             android:name=".AUserFrame"
+             android:label="@string/main_frame_name"></activity>
+         <activity
+             android:name=".AUserTaskList"
+             android:label="@string/main_frame_name"></activity>
+         <activity
+             android:name=".EvidenceFrame"
+             android:label="@string/main_frame_name"></activity>
+
+
+     </application>
+
+ </manifest>

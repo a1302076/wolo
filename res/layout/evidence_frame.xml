@@ -1,0 +1,87 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#DFF8F7"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:background="#0099CC"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:text="@string/back_button"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignRight="@+id/list"
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/b_buttonO" />
+
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|fill_vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="left"
+                            android:id="@+id/buttonLeft"
+                            android:layout_below="@+id/textView"
+                            android:layout_centerHorizontal="true" />
+
+                    <ImageSwitcher
+                            android:layout_width="154dp"
+                            android:layout_height="154dp"
+                            android:id="@+id/imageSwitcher1"
+                            android:layout_below="@+id/textView"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="168dp" />
+
+                    <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="right"
+                            android:id="@+id/buttonRight"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignLeft="@+id/buttonLeft" />
+
+                </RelativeLayout>
+            </TableRow>
+        </TableLayout>
+
+    </GridLayout>
+</ScrollView>

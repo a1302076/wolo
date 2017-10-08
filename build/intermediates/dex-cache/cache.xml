@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2">
+
+    <item
+        jar="/home/max/Studium/SS15/HCI/Team/WOLO_App/MI-Team2-Project/libs/android-support-v4.jar"
+        jumboMode="false" revision="22.0.1" sha1="3e4e879d0b3dc11f2feb3f55e77e3b5bd82c4a28">
+        <dex
+            dex="/home/max/Studium/SS15/HCI/Team/WOLO_App/MI-Team2-Project/build/intermediates/pre-dexed/debug/android-support-v4-ff3e86b96c05d72fde0b75e85f06c2c3f0c7be84.jar" />
+    </item>
+
+</items>

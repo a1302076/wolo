@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="at.ac.univie.gruppe1.team2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <!-- Erleubater Internetzugriff zur Kursabfrage -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="at.ac.univie.gruppe1.team2.MainActivity"
+            android:label="@string/main_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="at.ac.univie.gruppe1.team2.RegisterFrame"
+            android:label="@string/register_frame_name" />
+        <activity
+            android:name="at.ac.univie.gruppe1.team2.MainFrame"
+            android:label="@string/main_frame_name" />
+        <activity
+            android:name="at.ac.univie.gruppe1.team2.HomeFrame"
+            android:label="@string/home_frame_name" />
+        <activity
+            android:name="at.ac.univie.gruppe1.team2.TasksFrame"
+            android:label="@string/tasks_frame_name" />
+        <activity
+            android:name="at.ac.univie.gruppe1.team2.ProfilFrame"
+            android:label="@string/settings_frame_name" />
+        <activity
+            android:name="at.ac.univie.gruppe1.team2.LogoutFrame"
+            android:label="@string/logout_frame_name" />
+        <activity
+            android:name="at.ac.univie.gruppe1.team2.ListFrame"
+            android:label="@string/list_frame_name" />
+        <activity
+            android:name="at.ac.univie.gruppe1.team2.HighscoreFrame"
+            android:label="@string/highscore_frame_name" />
+        <activity
+            android:name="at.ac.univie.gruppe1.team2.ChosenTasksFrame"
+            android:label="@string/chosentasks_frame_name" />
+        <activity
+            android:name="at.ac.univie.gruppe1.team2.CreateTaskFrame"
+            android:label="@string/chosentasks_frame_name" />
+        <activity
+            android:name="at.ac.univie.gruppe1.team2.RunningTaskFrame"
+            android:label="@string/chosentasks_frame_name" />
+
+        <!--
+         <service
+             android:name=".RunningTaskFrame"
+             android:label="@string/chosentasks_frame_name">
+             >
+         </service>
+        -->
+
+        <activity
+            android:name="at.ac.univie.gruppe1.team2.FinishTaskFrame"
+            android:label="@string/chosentasks_frame_name" />
+        <activity
+            android:name="at.ac.univie.gruppe1.team2.DoneTasksFrame"
+            android:label="@string/chosentasks_frame_name" />
+        <activity
+            android:name="at.ac.univie.gruppe1.team2.UploadPicFrame"
+            android:label="@string/upload_pic_frame_name" />
+        <activity
+            android:name="at.ac.univie.gruppe1.team2.AUserFrame"
+            android:label="@string/main_frame_name" />
+        <activity
+            android:name="at.ac.univie.gruppe1.team2.AUserTaskList"
+            android:label="@string/main_frame_name" />
+        <activity
+            android:name="at.ac.univie.gruppe1.team2.EvidenceFrame"
+            android:label="@string/main_frame_name" />
+    </application>
+
+</manifest>

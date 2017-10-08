@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#DFF8F7">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="#0099CC"
+            android:shadowColor="#000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="@string/back_button"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/list"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/back_buttonE" />
+
+        <TextView
+            android:id="@+id/task_name"
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#000099"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="6dip" >
+
+        <!--  The child Views/Layout to flip -->
+
+        <!--  Layout 1 for 1st Screen -->
+        <LinearLayout
+            android:id="@+id/linid"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Aufgabenbild"
+                android:textSize="25dp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_launcher" />
+
+        </LinearLayout>
+
+
+
+
+    </ViewFlipper>
+
+</LinearLayout>

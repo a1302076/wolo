@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">at.ac.univie.G1T2.Wolo-app</string>
+    <string name="main_name">#Wolo</string>
+
+    <!--Strings Login/Main -->
+    <string name="main_hello">Wilkommen</string>
+    <string name="oder">oder</string>
+    <string name="login_button">Login</string>
+    <string name="reg_button">Registrieren</string>
+
+    <!-- Register -->
+    <string name="register_frame_name">Registrierung</string>
+    <string name="list_frame_name">Währungen</string>
+    <string name="list_item_name">Gewählt</string>
+
+    <!-- Main Frame/ Haupseite -->
+    <string name="main_frame_name">#Wolo</string>
+    <string name="textTabTitle1">Tab11</string>
+    <string name="textTabTitle2">Tab22</string>
+    <string name="textTabTitle3">Tab33</string>
+
+    <!-- Home Frame -->
+    <string name="home_frame_name">Home</string>
+    <string name="highscore_button">Highscore</string>
+
+    <!-- Tasks Frame -->
+    <string name="tasks_frame_name">Tasks</string>
+    <string name="tasks_button">zum Ponyhof</string>
+
+
+    <!-- Settings Frame -->
+    <string name="settings_frame_name">Tasks</string>
+
+    <!-- logout Frame -->
+    <string name="logout_frame_name">Tasks</string>
+    <string name="logout_button">Logout</string>
+    <string name="logout_text">#Wolo verlassen</string>
+
+
+    <!-- Highscore Frame -->
+    <string name="highscore_frame_name">Highscore</string>
+    <string name="back_button">Zurück</string>
+
+    <!-- ChosenTasks Frame -->
+    <string name="chosentasks_frame_name">Tasks</string>
+
+    <!-- CreateTask Frame -->
+    <string name="headline_create_task">Erstelle eine Aufgabe</string>
+    <string name="create_task_button">Task erstellen</string>
+    <string name="search_task_button">Task suchen</string>
+
+    <!-- RunningTask Frame -->
+    <string name="start_task_button">Start!</string>
+
+    <!-- UploadPicFrame Frame -->
+    <string name="upload_pic_frame_name">Profilbild</string>
+
+
+    <!-- Alt/Sonstiges -->
+    <string name="action_settings">Settings</string>
+
+    <string name="button2">zurück</string>
+    <string name="button3">Go</string>
+
+    <string name="umrechnen_nach">in</string>
+    <string name="image_desc">bild</string>
+    <string name="akt_kurs">Aktueller Wechselkurs</string>
+
+    <string name="title_activity_fullscreen">Home</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+</resources>
